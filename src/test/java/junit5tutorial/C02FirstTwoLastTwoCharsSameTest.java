@@ -17,6 +17,7 @@ class C02FirstTwoLastTwoCharsSameTest {
 		assertEquals(rs, obj.checkIfFirstTwoLastTwoCarsAreSame(str));
 	}
 	
+	//As you see, if you do not use @CsvSource you need to create 2 test methods
 	@ParameterizedTest
 	@ValueSource(strings= {"ABAB","AB"})
 	void checkIfFirstTwoLastTwoCarsAreSameTest2(String str) {
@@ -29,5 +30,4 @@ class C02FirstTwoLastTwoCharsSameTest {
 		assertFalse(obj.checkIfFirstTwoLastTwoCarsAreSame(str));
 	}
 	
-
 }
